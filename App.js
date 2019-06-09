@@ -1,14 +1,21 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-class App extends React.PureComponent {
-  render() {
-    return (
-      <Text>
-        Hello World!
-      </Text>
-    );
-  }
-}
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text>Hello World!!</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 export default App;
